@@ -100,5 +100,3 @@ get_data(con)
 redir = get_long_url("short")
 print(redir)
 '''
-get_data()
-print(get_short_url("short"))
