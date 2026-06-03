@@ -34,9 +34,8 @@
         const data = await response.json();
         
         if (data["short url"]) {
-            // Add the base URL of your server
             const baseUrl = "http://127.0.0.1:8000/";
-            const shortCode = data['short url']; // Assuming this is just 'abc12'
+            const shortCode = data['short url']; 
 
             resultDiv.innerHTML = `Short URL: <a href="${baseUrl}${shortCode}" target="_blank">${baseUrl}${shortCode}</a>`;
         } else {
